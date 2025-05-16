@@ -1,0 +1,295 @@
+Delivered-To: bsheks@gmail.com
+Received: by 2002:a05:6919:db59:b0:2cc:9a3b:b000 with SMTP id ff25csp2077012ysc;
+        Thu, 15 May 2025 23:01:56 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFC3n8/wQyCGvT6r49UQfYtCaPHnu4ZcHjtPD6qoIFNpn8muQf61A50BAMdsayq3n5O8XRR
+X-Received: by 2002:a05:620a:2892:b0:7c5:9480:7cb4 with SMTP id af79cd13be357-7cd46af8d25mr308139185a.9.1747375316674;
+        Thu, 15 May 2025 23:01:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1747375316; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Bz25VtIlzx87kmtAwBD3UMMNlDSCN+CNQVXqOQJ669JEqfAUdqjUU7XmKULVTHHgtR
+         G4pi/TaDk5ib0n+dDqEQKzBlH/e2Ep+4i24NmraCNm4YXDYjW31WO2p7dlNUE+fnBmb8
+         Zk0xtzPQYO+BLAJ0wx/dfOfxOPANYuSugxA6m2UFhEQP9azdMcgElEb4CHgKBYQyedDx
+         t6JsMaWhAShNghfzeC1HzNK3PY/HOmNgpsPq3mP9QHjTLYmKusEm1l1XsUY3NzI+CcdS
+         wy9t6vNkTC/z+Cm7q9sTLdbU37N1Pcb+p4+LfZRWenmTx/OeqszDvoss3A6ZQnHkplCQ
+         wu1g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=message-id:list-unsubscribe-post:list-unsubscribe:feedback-id
+         :content-transfer-encoding:mime-version:date:subject:from:to
+         :cfbl-address:dkim-signature:dkim-signature;
+        bh=LS3q1FoMY+R0ti5PhtDy0X9pXOwBs+ngAJs86DUvzHc=;
+        fh=rjoD8IM3Z15wkvGKu0RL9wK9u/VX/ukachVQI31r0zE=;
+        b=OsZdmJGX7UWluJhxzxMnr3q/k2tdgeX+NMkwWYf9Fog8fZNgt+IHo7UQRgh3NMG+0y
+         xTC7zUZEoCoc1okNIc+JUCsKpywHwwxADFOlQhpNUBzWSitIfFjJfa/YUQZeK1vozWpx
+         0UT2dOxoMijHcT8o+Pots0ALTOh5/TT9htb+sbq5yt2EITARh6bFDsvapErvzBw4WXZP
+         /LuZfOe/7G7u0PbyyD68RCsXDKg+gSkMuII1Zyo/xsoEiX5wIGkmaVOKP5Pevs4yyN5b
+         RmPwHZo5+Z6EMbEZxNO/UCvVkSMKN9Nb51UqQsZiW/y/K6hVgsbHV+KMPVwhO+p4598w
+         2/ZA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@completerpabootcamp.com header.s=acdkim1 header.b=k+mC6JIM;
+       dkim=pass header.i=@acems1.com header.s=acdkim1 header.b=puh4WpYf;
+       spf=pass (google.com: domain of bounce-1084185-140-44586-bsheks=gmail.com@em-1084185.completerpabootcamp.com designates 192.92.97.136 as permitted sender) smtp.mailfrom="bounce-1084185-140-44586-bsheks=gmail.com@em-1084185.completerpabootcamp.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=completerpabootcamp.com
+Return-Path: <bounce-1084185-140-44586-bsheks=gmail.com@em-1084185.completerpabootcamp.com>
+Received: from s1.csa1.acemsd4.com (s1.csa1.acemsd4.com. [192.92.97.136])
+        by mx.google.com with ESMTPS id af79cd13be357-7cd4688c6d0si145419385a.275.2025.05.15.23.01.56
+        for <bsheks@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 15 May 2025 23:01:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-1084185-140-44586-bsheks=gmail.com@em-1084185.completerpabootcamp.com designates 192.92.97.136 as permitted sender) client-ip=192.92.97.136;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@completerpabootcamp.com header.s=acdkim1 header.b=k+mC6JIM;
+       dkim=pass header.i=@acems1.com header.s=acdkim1 header.b=puh4WpYf;
+       spf=pass (google.com: domain of bounce-1084185-140-44586-bsheks=gmail.com@em-1084185.completerpabootcamp.com designates 192.92.97.136 as permitted sender) smtp.mailfrom="bounce-1084185-140-44586-bsheks=gmail.com@em-1084185.completerpabootcamp.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=completerpabootcamp.com
+X-KumoRef: eyJfQF8iOiJcXF8vIiwicmVjaXBpZW50IjoiYnNoZWtzQGdtYWlsLmNvbSJ9
+DKIM-Signature: v=1; a=rsa-sha256; d=completerpabootcamp.com; s=acdkim1; c=relaxed/relaxed;
+	bh=LS3q1FoMY+R0ti5PhtDy0X9pXOwBs+ngAJs86DUvzHc=;
+	h=from:to:subject:date:mime-version:content-type:sender:cc:date:message-id;
+	t=1747375316; x=1747461716;
+	b=k+mC6JIM/sDvJdTbV5gf2p/DA8J8hvfiYlJHnblrghmG4GcjFMIJjmCnm6FGtg6QsAhuYDFpl
+	0HK7r71FF7j/gCiFo8FJ+3dex1a2bgcITuCGqQ7nQxvH3kv23peYY5gch/KcumztGHqXzOqw7Lo
+	m7voAVeME7INe85pJVqp/Uhdkf3sgOPpyxFLjOYCKAs1a+e6b4DdjQx9J9n7ST7BNLQtFOe56Ss
+	+17H4AbjSUBv2MENE5fRYKjR05HpzXt9FNTftBmaLnSGkua3A1vgo/RtEGuf+SBlEOUZP5pAfXg
+	mkyW7ETZ8Qz8y3G6FjZqe6CPE97sVv9DsppJgf7dZakQ==;
+DKIM-Signature: v=1; a=rsa-sha256; d=acems1.com; s=acdkim1; c=relaxed/relaxed;
+	bh=LS3q1FoMY+R0ti5PhtDy0X9pXOwBs+ngAJs86DUvzHc=;
+	h=from:to:subject:date:mime-version:content-type:sender:cc:date:message-id;
+	t=1747375316; x=1747461716;
+	b=puh4WpYfkF8ZogOxgDKoQ3ePrS5l3LaymDEv3LaS1znIMMGvvaHpoLhlR4j4C4roYD/k3PGY+
+	PvYXf96/FlZGn5H7HbfD6LIU9dNGlY5BDqlzeNt9Cvs0jVrQqua0YMas2p47mKOdvKOki1X8MCu
+	rHlxyqdQNwuxwnc+S69LYj1u8KWhb1hW2jB9Ij4eO8izRtlUWea0tTpBdIbXGyJD0qlbLcStLX0
+	F4tW8FSdhMx7wqdwb1zcuKThVpxHgVOTDxTMuzNQJ56fiJjKhLvDGJWwHBP/w3EsiozMzZ7GuLa
+	HpLw7JhIv5zzvaFR3GAFt9QiO4pywGZAq/LUzaYZU7Zg==;
+CFBL-Address: fbl-report@acems1.com; report=arf
+X-Mailer: ActiveCampaign Mailer
+Received: from localhost.localdomain (10.14.64.121)
+  by acems1.com (KumoMTA 10.13.176.86) 
+  with ESMTP id 45d9ad40321b11f0b3520afffffef859 for <bsheks@gmail.com>;
+  Fri, 16 May 2025 06:01:56 +0000
+Return-Path: <bounce-1084185-140-44586-bsheks=gmail.com@em-1084185.completerpabootcamp.com>
+To: "Abhishek A B" <bsheks@gmail.com>
+From: "Leon Petrou" <leon@completerpabootcamp.com>
+Subject: Dummy 10: Read, Save, Delete
+Date: Fri, 16 May 2025 01:01:56 -0500
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift-19819830606826d4d48f77f4.61731039_=_"
+Content-Transfer-Encoding: 7bit
+X-Report-Abuse: Please report abuse here: abuse@acemserv.com
+X-mid: YnNoZWtzQGdtYWlsLmNvbSAsIGMxNDAgLCBtMTc5ICwgczU2OTU3
+x-virtual-mta: s1.csa1.acemsc4.com
+Feedback-ID: 1084185:1084185.140:s1.csa1.acemsc4.com:activecampaign
+X-250ok-CID: 1084185-140
+List-Unsubscribe: <https://completerpabootcamp.activehosted.com/box.php?nl=11&c=140&m=179&s=8448d5377bb018f819710698bd2b772a&funcml=unsub2&luha=1>,<mailto:unsubscribe-a0f27a8abbf1e4821024a44fd9e8dd10-140-8448d5377bb018f819710698bd2b772a@s1.csa1.acemsd4.com>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-DKIM-Options: s=acdkim1
+Message-ID: <20250516060156.1867.984665842.swift@completerpabootcamp.activehosted.com>
+
+
+
+
+--_=_swift-19819830606826d4d48f77f4.61731039_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html>=0A<head><meta http-equiv=3D"Content-Type" content=3D"=
+text/html; charset=3Dutf-8"><meta http-equiv=3D"Content-Language" content=
+=3D"en-us"><meta name=3D"format-detection" content=3D"telephone=3Dno"><meta=
+ name=3D"format-detection" content=3D"date=3Dno"><meta name=3D"format-detec=
+tion" content=3D"address=3Dno"><meta name=3D"format-detection" content=3D"e=
+mail=3Dno"><meta name=3D"viewport" content=3D"width=3Ddevice-width, minimal=
+-ui, initial-scale=3D1.0, maximum-scale=3D1.0, user-scalable=3D0;"><meta ht=
+tp-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><style data-ac-keep=3D"t=
+rue"> .ExternalClass { width: 100%; background: inherit; background-color: =
+inherit; } .ExternalClass, .ExternalClass p, .ExternalClass span, .External=
+Class font, .ExternalClass td, .ExternalClass div { line-height: 100%; } .E=
+xternalClass p, .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undore=
+set div p, .undoreset p { margin-bottom: 20px; } div[class^=3D"aolmail_divb=
+ody"] { overflow: auto; } [owa] #ac-footer { padding: 20px 0px !important; =
+background:=0Ainherit; background-color: inherit; } a[x-apple-data-detector=
+s] { color: inherit !important; text-decoration: none !important; font-size=
+: inherit !important; font-family: inherit !important; font-weight: inherit=
+ !important; line-height: inherit !important; } @-ms-viewport { width: devi=
+ce-width; } </style><style data-ac-keep=3D"true">=0A@media only screen and =
+(max-width: 600px) { /*----------------------------------------------------=
+---------------------*\ Abandoned Cart widget \*---------------------------=
+---------------------------------------------*/ .td_abandoned-cart img {dis=
+play: block;padding-right: 0 !important;padding-bottom: 0 !important;width:=
+ 100% !important;max-width: 100% !important;height: auto !important;} body =
+{ padding: 0!important; font-size:1em!important; } * { -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box; } *[class]=
+.divbody {-webkit-text-size-adjust:none !important;} *[class].td_picture im=
+g {width:auto !important;} *[class].td_text { line-height: 110%; } *[class]=
+.td_button { width: auto; } /* Collapse all block elements */ :not(.body) t=
+able { display: block!important; float:none!important; border-collapse:coll=
+apse !important; width:100% !important; min-width:100% !important; clear:bo=
+th!important; } :not(.body) thead, :not(.body) tbody,=0A:not(.body) tr { di=
+splay:block!important; float:none!important; width:100% !important; } :not(=
+.body) th, :not(.body) td, :not(.body) p { display:block!important; float:n=
+one!important; width:100% !important; clear:both!important; } /* Remove bro=
+wser default styling for elements */ ul, ol { margin-left: 20px; margin-bot=
+tom: 10px; margin-top: 10px; -webkit-margin-before: 0; -webkit-margin-after=
+: 0; -webkit-padding-start: 0; } /* Set default height for spacer once coll=
+apse */ *[class].spacer { height: auto!important; } a[href^=3Ddate]{ color:=
+inherit !important; text-decoration:none !important;} a[href^=3Dtelephone]{=
+ color:inherit !important; text-decoration:none !important;} a[href^=3Daddr=
+ess]{ color:inherit !important; text-decoration:none !important;} a[href^=
+=3Demail]{ color:inherit !important; text-decoration:none !important;} /* D=
+efault table cell height */ /*---------------------------------------------=
+----------------------------*\ Product Widget=0A\*-------------------------=
+------------------------------------------------*/ .td_product div, .td_pro=
+duct .products-display { float: none !important; display: block !important;=
+ width: 100% !important; Margin-bottom: 20px !important; } .td_product img =
+{ width: 100% !important; max-width: 100% !important; } /* Default social i=
+cons */ *[class].ac-social-icon-16 {width:16px !important; height:16px !imp=
+ortant;} *[class].ac-social-icon-24 {width:24px !important; height:24px !im=
+portant;} *[class].ac-social-icon-28 {width:28px !important; height:28px !i=
+mportant;} *[class].__ac_social_icons { margin-right: 0px !important; } }=
+=0A</style><style data-ac-keep=3D"true"> @media only screen and (max-width:=
+ 320px) { div.divbody { padding: 20px !important; } table, tbody, td, .divb=
+ody { display: table !important; width: 100% !important; max-width: 100% !i=
+mportant; } .td_rss .rss-item img.iphone_large_image { width: auto !importa=
+nt; } u + .body { display: table !important; width: 100vw !important; min-w=
+idth: 100vw !important; } u + .body table { display: table !important; widt=
+h: 100% !important; min-width: 100% !important; } u + .body td { display: b=
+lock !important; width: 100% !important; min-width: 100% !important; } u + =
+.body img { display: inline-block !important; margin: auto !important; widt=
+h: auto !important; vertical-align: bottom !important; } u + .body center {=
+ display: block !important; margin: auto !important; width: 100% !important=
+; min-width: 100% !important; text-align: center !important; } u + .body ta=
+ble._ac_social_table, u + .body table._ac_social_table td, u + .body=0Atabl=
+e._ac_social_table div, u + .body table._ac_social_table a { display: inlin=
+e-block !important; margin: auto !important; width: auto !important; min-wi=
+dth: auto !important; text-align: center !important; } u + .body table._ac_=
+social_table img { display: inline-block !important; margin: auto !importan=
+t; width: 32px !important; min-width: 32px !important; max-width: 32px !imp=
+ortant; }=0A}=0A@media only screen and (max-width: 375px) { div.divbody { p=
+adding: 20px !important; } table, tbody, td, .divbody { display: table !imp=
+ortant; width: 100% !important; max-width: 100% !important; } .td_rss .rss-=
+item img.iphone_large_image { width: auto !important; } u + .body { display=
+: table !important; width: 100vw !important; min-width: 100vw !important; }=
+ u + .body table { display: table !important; width: 100% !important; min-w=
+idth: 100% !important; } u + .body td { display: block !important; width: 1=
+00% !important; min-width: 100% !important; } u + .body img { display: inli=
+ne-block !important; margin: auto !important; width: auto !important; verti=
+cal-align: bottom !important; } u + .body center { display: block !importan=
+t; margin: auto !important; width: 100% !important; min-width: 100% !import=
+ant; text-align: center !important; } u + .body table._ac_social_table, u +=
+ .body table._ac_social_table td, u + .body table._ac_social_table div, u +=
+ .body=0Atable._ac_social_table a { display: inline-block !important; margi=
+n: auto !important; width: auto !important; min-width: auto !important; tex=
+t-align: center !important; } u + .body table._ac_social_table img { displa=
+y: inline-block !important; margin: auto !important; width: 32px !important=
+; min-width: 32px !important; max-width: 32px !important; }=0A}=0A@media on=
+ly screen and (max-width: 414px) { div.divbody { padding: 20px !important; =
+} table, tbody, td, .divbody { display: table !important; width: 100% !impo=
+rtant; max-width: 100% !important; } .td_rss .rss-item img.iphone_large_ima=
+ge { width: auto !important; } u + .body { display: table !important; width=
+: 100vw !important; min-width: 100vw !important; } u + .body table { displa=
+y: table !important; width: 100% !important; min-width: 100% !important; } =
+u + .body td { display: block !important; width: 100% !important; min-width=
+: 100% !important; } u + .body img { display: inline-block !important; marg=
+in: auto !important; width: auto !important; vertical-align: bottom !import=
+ant; } u + .body center { display: block !important; margin: auto !importan=
+t; width: 100% !important; min-width: 100% !important; text-align: center !=
+important; } u + .body table._ac_social_table, u + .body table._ac_social_t=
+able td, u + .body table._ac_social_table div, u + .body=0Atable._ac_social=
+_table a { display: inline-block !important; margin: auto !important; width=
+: auto !important; min-width: auto !important; text-align: center !importan=
+t; } u + .body table._ac_social_table img { display: inline-block !importan=
+t; margin: auto !important; width: 32px !important; min-width: 32px !import=
+ant; max-width: 32px !important; }=0A}=0A@media only screen and (max-width:=
+ 667px) { div.divbody { padding: 20px !important; } table, tbody, td, .divb=
+ody { display: table !important; width: 100% !important; max-width: 100% !i=
+mportant; } .td_rss .rss-item img.iphone_large_image { width: auto !importa=
+nt; } u + .body { display: table !important; width: 100vw !important; min-w=
+idth: 100vw !important; } u + .body table { display: table !important; widt=
+h: 100% !important; min-width: 100% !important; } u + .body td { display: b=
+lock !important; width: 100% !important; min-width: 100% !important; } u + =
+.body img { display: inline-block !important; margin: auto !important; widt=
+h: auto !important; vertical-align: bottom !important; } u + .body center {=
+ display: block !important; margin: auto !important; width: 100% !important=
+; min-width: 100% !important; text-align: center !important; } u + .body ta=
+ble._ac_social_table, u + .body table._ac_social_table td, u + .body table.=
+_ac_social_table div, u + .body=0Atable._ac_social_table a { display: inlin=
+e-block !important; margin: auto !important; width: auto !important; min-wi=
+dth: auto !important; text-align: center !important; } u + .body table._ac_=
+social_table img { display: inline-block !important; margin: auto !importan=
+t; width: 32px !important; min-width: 32px !important; max-width: 32px !imp=
+ortant; }=0A} </style><!--[if !mso]><!-- webfonts --><!--<![endif]--><!--[i=
+f lt mso 12]> <![endif]--><!--[if gte mso 9]>=0A<xml> <o:OfficeDocumentSett=
+ings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumen=
+tSettings>=0A</xml>=0A<![endif]--></head><body id=3D"ac-designer" class=3D"=
+body" style=3D"font-family: Arial; line-height: 1.1; margin: 0px; backgroun=
+d-color: #FFFFFF; width: 100%; text-align: center;"><div class=3D"divbody" =
+style=3D"margin: 0px; outline: none; padding: 0px; color: #000000; font-fam=
+ily: arial; line-height: 1.1; width: 100%; background-color: #FFFFFF; backg=
+round: #FFFFFF; text-align: center;"><table class=3D"template-table" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" align=3D"left" st=
+yle=3D"-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-c=
+ollapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; background-color: #FFFFFF; background: #FFFFFF;"><t=
+r style=3D"mso-line-height-rule: exactly;"><td align=3D"center" valign=3D"t=
+op" width=3D"100%" style=3D"mso-line-height-rule: exactly;"><table class=3D=
+"template-table" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+650" bgcolor=3D"#FFFFFF" style=3D"-ms-text-size-adjust: auto;=0A-webkit-tex=
+t-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width:=
+ auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 650px;"><tr=
+ style=3D"mso-line-height-rule: exactly;"><td id=3D"layout_table_fde86aa84d=
+8bf78b2f628416bd5c1b406380b25c" valign=3D"top" align=3D"center" width=3D"65=
+0" style=3D"mso-line-height-rule: exactly;"><table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"layout layout-table root-table" width=3D"=
+650" style=3D"-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; b=
+order-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt;"><tr style=3D"mso-line-height-rule: exactly;=
+"><td id=3D"layout-row-margin1003" valign=3D"top" style=3D"mso-line-height-=
+rule: exactly;"><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"-ms-text-size-adjust: auto; -webkit-text-size-adjust: =
+100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace:=0A0pt;"><tr id=3D"layout-row1003" class=3D=
+"layout layout-row widget _widget_text " style=3D"mso-line-height-rule: exa=
+ctly; margin: 0; padding: 0;"><td id=3D"layout-row-padding1003" valign=3D"t=
+op" style=3D"mso-line-height-rule: exactly;"><table width=3D"100%" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"-ms-text-size-adjust: a=
+uto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: =
+14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr s=
+tyle=3D"mso-line-height-rule: exactly;"><td id=3D"text_div980" class=3D"td_=
+text td_block" valign=3D"top" align=3D"left" width=3D"650" style=3D"line-he=
+ight: 140%; mso-line-height-rule: exactly; margin: 0; outline: none; paddin=
+g: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1=
+.4; text-decoration: inherit; font-family: arial;"> <div style=3D"line-heig=
+ht: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: =
+16px; font-weight: inherit; line-height: 1.4; text-decoration: inherit;=0Am=
+so-line-height-rule: exactly;" zn_id=3D"88" data-line-height=3D"1.4"><span =
+style=3D"color: inherit; font-size: 16px; font-weight: inherit; line-height=
+: inherit; text-decoration: inherit;" class=3D"" zn_id=3D"162">Hello Abhish=
+ek,<br zn_id=3D"143" class=3D""><br zn_id=3D"144" class=3D"">Use UiPath to =
+read, save then delete this email.<br zn_id=3D"179" class=3D""><br zn_id=3D=
+"180" class=3D"">Happy automation!<br zn_id=3D"99"><br zn_id=3D"100">Regard=
+s,<br zn_id=3D"181" class=3D"">Leon</span></div>=0A<!--[if (gte mso 12)&(lt=
+e mso 15) ]>=0A<style data-ac-keep=3D"true" data-ac-inline=3D"false"> #text=
+_div980, #text_div980 div { line-height: 140% !important; };=0A</style>=0A<=
+![endif]--></td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</td>=0A</=
+tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</di=
+v>=0A<img src=3D"https://completerpabootcamp.acemlna.com/lt.php?x=3D41Zy~GD=
+LJXShEpF8ztI5geBs3KIoiNf1juU1ZHk3VXLL6XN7-U2DjFJs1e3T-t~yjlZsznHKKuHVUsu5_Q=
+j" border=3D"0" width=3D"1" height=3D"1" alt=3D"" style=3D"display:block;wi=
+dth:1px!important;min-width:1px!important;max-width:1px!important;height:1p=
+x!important;border:0;overflow:hidden;" /><div id=3D"ac-footer" style=3D"cle=
+ar:both;background-color:inherit;background:inherit;min-width:100%;mso-tabl=
+e-lspace:0pt;mso-table-rspace:0pt;padding:20px;color:#000000;font-size:11px=
+;font-family:arial,helvetica,sans-serif;line-height:140%;line-height:1.4;te=
+xt-align:center;box-sizing:border-box;"><center>Sent to: <span style=3D"fon=
+t-size:11px;font-family:arial,helvetica,sans-serif;font-weight:normal;text-=
+decoration:none;outline:none;">bsheks@gmail.com</span><br><br><a href=3D"ht=
+tps://completerpabootcamp.acemlna.com/proc.php?nl=3D11&c=3D140&m=3D179&s=3D=
+8448d5377bb018f819710698bd2b772a&act=3Dunsub&runid=3D215680" style=3D"font-=
+size:11px;font-family:arial,helvetica,sans-serif;font-weight:bold;text-deco=
+ration:underline;"><span=0Astyle=3D"font-weight:bold;text-decoration:underl=
+ine;">Unsubscribe</span></a><br><br>Complete RPA Bootcamp | Leon Petrou, In=
+c., 651 N. Broad St. , Suite 206, Middletown, Delaware 19709, United States=
+</center></div>=0A<br clear=3D"all" /></body>=0A</html>
+--_=_swift-19819830606826d4d48f77f4.61731039_=_--
+
+
