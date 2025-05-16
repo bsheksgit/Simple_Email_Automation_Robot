@@ -1,1 +1,2 @@
 This is a simple robot which performs actions on the last 10 e-mails based on the subject of the mail. Actions include Marking as read or unread, saving emails, saving attachments, deleting and forwarding.
+Change folder addresses and mail ids wherever needed.
