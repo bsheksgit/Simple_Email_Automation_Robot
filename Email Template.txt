@@ -1,0 +1,10 @@
+"Dear XYZ,
+
+Your Email automation robot has run successfully at {0}. 
+The following logs have been recorded.
+{1}
+
+Also, please see the attached image.
+
+Regards,
+Ui Path Robot"
